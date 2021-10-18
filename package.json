@@ -1,0 +1,32 @@
+{
+  "name": "typescript-introduction-web",
+  "version": "1.0.0",
+  "description": "It is a TypeScript 🟦 project to begin to understand the typescript project and continue the video-media-player-web project",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html src/*/**.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zearkiatos/typescript-introduction-web.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "FrontEnd",
+    "Introduction"
+  ],
+  "author": "Pedro Capriles <caprilespe@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zearkiatos/typescript-introduction-web/issues"
+  },
+  "homepage": "https://github.com/zearkiatos/typescript-introduction-web#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.4.4"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
