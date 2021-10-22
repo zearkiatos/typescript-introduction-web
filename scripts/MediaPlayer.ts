@@ -1,24 +1,15 @@
 class MediaPlayer {
+  private media: HTMLMediaElement;
+  private plugins: Array<any>;
   constructor(configuration) {
     this.media = configuration.element;
     this.plugins = configuration.plugins || [];
 
     this.initializationPlugins();
   }
-  initializationPlugins() {
-    const player = {
-      play: () => this.play(),
-      pause: () => this.pause(),
-      media: this.media,
-      get muted() {
-        return this.media.muted;
-      },
-      set muted(mute) {
-        this.media.muted = mute;
-      }
-    };
+  private initializationPlugins() {
     this.plugins.forEach((plugin) => {
-      plugin.run(player);
+      plugin.run(this);
     });
   }
   play() {
@@ -40,12 +31,5 @@ class MediaPlayer {
     this.media.muted ? this.unmute() : this.mute();
   }
 }
-
-
-
-
-
-
-
 
 export default MediaPlayer;
