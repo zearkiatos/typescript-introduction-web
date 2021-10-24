@@ -4,8 +4,8 @@
   "description": "It is a TypeScript 🟦 project to begin to understand the typescript project and continue the video-media-player-web project",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html src/*/**.html",
-    "dev": "parcel index.html src/*/**.html",
+    "start": "parcel index.html src/*/**.html src/*",
+    "dev": "parcel index.html src/*/**.html src/*",
     "test": "jest -c jest.config.js --coverage"
   },
   "repository": {
