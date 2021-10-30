@@ -6,7 +6,6 @@ RUN apk add --update nodejs npm
 WORKDIR /app
 
 COPY . ./
-
 RUN npm install
 
 EXPOSE 1234
