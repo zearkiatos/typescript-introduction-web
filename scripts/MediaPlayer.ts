@@ -1,5 +1,5 @@
 class MediaPlayer {
-  private media: HTMLMediaElement;
+  public media: HTMLMediaElement;
   private plugins: Array<any>;
   constructor(configuration) {
     this.media = configuration.element;
